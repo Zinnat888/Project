@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;   
+    transition: all .3s ease;
+}
+
+.container {
+    width: 1300px;
+    margin: auto;
+}
+
+section {
+    font-family: 'Ubuntu';
+}
+
+.btn-pagin1 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    padding: 10px 15px;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #02B977;
+    color: black;
+}
+
+.btn-pagin2 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    padding: 10px 15px;
+    background-color: #fff;
+    border-radius: 50px;
+    border: 1px solid #02B977;
+    margin: 10px;
+    color: black;
+}
+
+.pagin_this {
+    background-color: #02B977;
+    color: white;
+}
+
+.pagination_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('../img/Vector\ 5.svg');
+    background-repeat: no-repeat;
+    background-position-y: center;
+    margin-top: 50px;
+}
+.red{
+    color: red;
+}
+.yellow{
+    color: rgb(255 215 19);
+}
+.yellow2{
+    color: rgb(214, 139, 0);
+}
+.green{
+    color: green;
+}
+p{
+    margin: 2px 0;
+    padding: 2px 0;
+}
+@media screen and (max-width: 1400px) {
+    .container {
+        width: auto;
+        margin: 0 20px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .wrap_help {
+        display: none;
+    }
+    .pagination_only {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .btn-pagin2 {
+        margin: 0;  
+    }
+}
+
+/* @media screen and (max-width: 450px) {
+    .container {
+        width: 350px;
+        margin: auto;
+    }
+} */
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: auto;
+        margin: 0 10px;
+    }
+    .btn-pagin2 {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+}

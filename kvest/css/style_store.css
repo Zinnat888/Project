@@ -1,0 +1,116 @@
+.link_add_tovar{
+    width: 30%;
+}
+.section_store{    
+    padding-bottom: 100px;
+    background-color: #F3F3F3;
+    padding-top: 20px;
+}
+.wrap_store{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 43%;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 7px;
+    border: 1px solid #E5E5E5;
+    margin-bottom: 20px;
+}
+.product_item{
+    margin-bottom: 20px;
+}
+.product_name{
+    margin-bottom: 10px;
+}
+.product_img{
+    width: 450px;
+    height: 270px;
+}
+.product_img>img{
+    -o-object-fit: cover;
+    object-fit: cover;
+    /* width: 450px; */
+    height: 270px;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .product{
+        align-items: center;
+        padding: 10px;
+    }
+    .product_img {
+        width: 300px;
+        height: 200px;
+    }
+    .product_img>img {
+        -o-object-fit: cover;
+        object-fit: cover;
+        width: 300px;
+        height: 200px;
+    }
+    
+    
+}
+
+@media screen and (max-width: 800px) {
+    .product{
+        width: 500px;
+        align-items: flex-start;
+    }
+    .product_img {
+        width: 500px;
+        height: 300px;
+    }
+    .product_img>img {
+        -o-object-fit: cover;
+        object-fit: cover;
+        width: 500px;
+        height: 300px;
+    }
+    .point_store{        
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .product{
+        width: 400px;
+        align-items: flex-start;
+    }
+    .product_img {
+        width: 400px;
+        height: 250px;
+    }
+    .product_img>img {
+        -o-object-fit: cover;
+        object-fit: cover;
+        width: 400px;
+        height: 250px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .product{
+        width: 100%;
+    }
+    .product_img {
+        width: 300px;
+        height: 150px;
+    }
+    .product_img>img {
+        -o-object-fit: cover;
+        object-fit: cover;
+        width: 300px;
+        height: 150px;
+    }
+}

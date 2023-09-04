@@ -1,0 +1,128 @@
+.section_unique_quest {
+    padding-bottom: 100px;
+    background-color: #F3F3F3;
+}
+
+.wrap_unique_quest {
+    background-color: #fff;
+    padding: 45px;
+    border: 1px solid #E5E5E5;
+    border-radius: 7px;
+}
+
+.wrap_finish_quest {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quest_name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #474747;
+}
+
+.quest_description {
+    font-weight: 400;
+    font-size: 16px;
+    color: #474747;
+    padding: 20px 0;
+}
+
+.point_unique_quest {
+    background: #E9E9E9;
+    border-radius: 4px;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #019557;
+    margin-left: 15px;
+}
+
+.action {
+    background: #E9E9E9;
+    border: 1px solid #DEDEDE;
+    border-radius: 4px;
+    margin-top: 40px;
+}
+
+.action_name {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 16px;
+    color: #474747;
+    padding: 20px;
+    border-bottom: 1px solid #BCBCBC;
+}
+
+.action_descriprion {
+    font-weight: 400;
+    font-size: 15px;
+    color: #474747;
+    padding: 20px;
+}
+
+.question {
+    border-left: 5px solid #11BD75;
+    padding: 20px 20px;
+    background-color: #fff;
+}
+
+.question_name {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 16px;
+    color: #11BD75;
+    padding-bottom: 10px;
+}
+
+.question_text {
+    font-weight: 400;
+    font-size: 16px;
+    color: #474747;
+}
+
+.variants {
+    padding: 20px 50px;
+}
+
+.variant {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.variant > input { 
+    margin: 1px 10px 0 0;
+}
+
+.variant > label { 
+    font-weight: 400;
+    font-size: 16px;
+    color: #474747;
+}
+
+.finish_quest {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    padding: 10px 30px;
+    border: none;
+    background: #11BD75;
+    border-radius: 4px;
+    margin-top: 45px;
+}
+
+@media screen and (max-width: 500px) {
+    .wrap_unique_quest {
+        padding: 45px 20px;
+    }
+    .quest_description {
+        font-weight: 400;
+        font-size: 15px;
+        color: #474747;
+        padding: 20px 0;
+    }
+}

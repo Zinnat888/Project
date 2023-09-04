@@ -1,0 +1,39 @@
+.footer {
+    border-top: 1px solid #E4E4E4;
+    padding: 20px 0 12px 0;
+}
+
+.nav3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav3 > div {
+    width: 40%;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+}
+
+.link1, .link2 {
+    margin: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    .empty-div {
+        display: none;
+    }
+    .link2 {
+        margin: 0;
+    }
+    .link1 {
+        margin: 0 30px 0 0;
+    }
+    .nav3 > div {
+        width: auto;
+    }
+}
+
