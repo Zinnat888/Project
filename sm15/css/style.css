@@ -1,0 +1,1115 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    
+}
+main{
+    background: url(../img/background.jpg) no-repeat;
+    background-size: 100%;
+    padding: 50px 0;
+    min-height: 90%;
+}
+.container{
+    /* background-color: rgba(240, 128, 128, 0.419);     */
+    width: 80%;
+    min-height: 600px;
+    margin: auto;
+}
+.container_2{
+    /* background-color: rgba(240, 128, 128, 0.419);     */
+    width: 90%;
+    min-height: 600px;
+    margin: auto;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+span.error{
+    color: red;
+    font-size: 10pt;
+}
+
+
+/* ---------------HEADER---------------------- */
+
+.header{
+    background-color: DeepSkyBlue;
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.header_menu{
+    /* background-color: gray; */
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 14pt;  
+    padding: 1px;
+}
+.header_menu_section{
+    /* background-color: greenyellow; */
+    display: flex;
+    align-items: center;
+}
+.header_menu_nav{
+    /* background-color: brown; */
+    box-sizing: border-box;
+    flex: 1;
+}
+
+
+.header_menu_section_user{
+    border-radius: 5px;
+    padding: 5px;
+    transition: 0.3s;
+    text-align: left;
+}
+.header_menu_section_user:hover{
+    color: gray;
+}
+
+.header_menu_name{
+    border-radius: 5px;
+    padding: 5px;
+    transition: 0.3s;
+    font-size: 18pt;
+    text-align: center;
+}
+.header_menu_name:hover{
+    color: gray;
+}
+
+.header_menu_login{
+    border-radius: 5px;
+    padding: 5px;
+    transition: 0.3s;
+    text-align: right;
+}
+.header_menu_login:hover{
+    color: gray;
+}
+/* ---------------------------HEADER-END------------------- */
+
+
+/* ----------------------------FOOTER------------------- */
+
+footer{
+    background-color: black;
+    height: 100px;
+    margin: auto;
+}
+
+/* ---------------------------FOOTER-END------------------ */
+
+
+
+
+
+/* ----------------------------PAGINATION--------------------- */
+
+.pagination{
+    display: flex;
+    justify-content: center;
+}
+.pagination>a{
+    background: linear-gradient(45deg, #46fcff, #fc5cff);
+    display: flex;
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+.pagination>a:hover{
+    background: linear-gradient(45deg, #37c1c4, #a53ea7);
+}
+/* ----------------------------PAGINATION-END-------------------- */
+
+
+/* --------------------------FORM-SEARCH------------------------- */
+form.search{
+    padding: 20px 0;
+}
+form.search>input{
+    outline: none;  
+    outline-offset: -1px;
+    font-size: 12pt;
+    padding: 5px;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+form.search>input:focus{
+    outline: 1px solid #fc00ff;
+}
+/* ------------------------FORM-SEARCH-END------------------------ */
+
+
+
+/* ------------------------MODAL---------------------------------- */
+#okno{
+    background-color: #3535358a;
+    display: none;
+    position: absolute;
+    left: -100%;
+    right: -100%;
+    top: -100%;
+    bottom: -100%;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s;
+}
+
+#okno:target{
+    display: flex;    
+}
+.modal{
+    background-color: rgb(228, 228, 228);
+    width: 15%;
+    height: 20%;
+    padding: 10px;
+    border-radius: 5px;
+}
+.modal>a{
+    text-decoration: none;
+    color: black;
+    font-size: 12pt;
+    text-align: right;
+    display: block;
+}
+.modal_form{
+    display: flex;
+    flex-direction: column;
+}
+.modal_form>input{
+    display: block;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+
+}
+/* ----------------table-appointment------------------ */
+table.appointment{
+    background-color: #EEEEEE;
+    width: 95%;
+    border-collapse: collapse;
+    border-radius: 5px;
+    color: black;
+    margin: auto;
+}
+
+
+table.appointment caption{
+    text-align: center;
+    background-color: Silver;
+    text-align: center;
+    font-size: 16pt;
+    border-radius: 5px 5px 0 0;
+    padding: 5px 0;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+}
+
+
+table.appointment thead, tbody tr{
+    border-bottom: 1px solid black ;
+    font-size: 10pt;
+    transition: 0.3s;
+    min-height: 40px;
+}
+table.appointment tbody tr:hover{
+    background-color: DarkGrey;
+    cursor: pointer;
+}
+table.appointment thead tr:nth-child(1){
+    background-color: Silver;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    border-top: 1px solid black;
+}
+
+table.appointment tfoot tr{
+   height: 5px;
+}
+
+
+
+table.appointment td{
+    padding: 10px 5px;
+}
+
+table.appointment td:nth-child(1){
+    width: 10%;
+    text-align: center;
+}
+table.appointment td:nth-child(2){
+    text-align: left;
+}
+table.appointment td:nth-child(3){
+    text-align: left;
+}
+table.appointment td:nth-child(4){
+    width: 25%;
+    text-align: center;
+}
+/*--------------------- table-appointment-end------------------------ */
+
+
+/* ------------------------MODAL-END--------------------------------- */
+
+
+
+
+
+/* --------------------------TABLE-EMPLOYEE--------------------------- */
+
+table.employee{
+    background-color: #EEEEEE;
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 5px;
+    color: black;
+}
+
+
+table.employee caption{
+    text-align: center;
+    background-color: Silver;
+    text-align: center;
+    font-size: 16pt;
+    border-radius: 5px 5px 0 0;
+    padding: 5px 0;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+}
+
+
+table.employee thead, tbody tr{
+    border-bottom: 1px solid black ;
+    transition: 0.3s;
+}
+table.employee tbody tr:hover{
+    background-color: DarkGrey;
+    cursor: pointer;
+}
+table.employee thead tr:nth-child(1){
+    background-color: Silver;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    border-top: 1px solid black;
+}
+
+table.employee tfoot tr{
+   height: 5px;
+}
+
+
+
+table.employee td{
+    padding: 10px 5px;
+}
+
+table.employee td:nth-child(1){
+    width: 5%;
+    text-align: center;
+}
+table.employee td:nth-child(2){
+    /* width: 400px;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: clip; */
+}
+table.employee td:nth-child(3){
+    width: 10%;
+    text-align: center;
+}
+table.employee td:nth-child(4){
+    width: 95px;
+    text-align: center;
+}
+/* --------------------------TABLE-EMPLOYEE-END-------------------- */
+
+
+
+
+/* --------------------------TABLE-PERFORMER--------------------- */
+
+table.performer{
+    background-color: #EEEEEE;
+    width: 100%;
+    margin: 10% 0;
+    border-collapse: collapse;
+    border-radius: 5px;
+    color: black;
+}
+
+
+table.performer caption{
+    text-align: center;
+    background-color: Silver;
+    text-align: center;
+    font-size: 16pt;
+    border-radius: 5px 5px 0 0;
+    padding: 5px 0;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+}
+
+
+table.performer thead, tbody tr{
+    border-bottom: 1px solid black ;
+    transition: 0.3s;
+}
+table.performer tbody tr:hover{
+    background-color: DarkGrey;
+    cursor: pointer;
+}
+table.performer thead tr:nth-child(1){
+    background-color: Silver;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    border-top: 1px solid black;
+}
+
+table.performer tfoot tr{
+   height: 5px;
+}
+
+
+
+table.performer td{
+    padding: 10px 5px;
+}
+
+table.performer td:nth-child(1){
+    width: 5%;
+    text-align: center;
+}
+table.performer td:nth-child(2){
+    /* width: 400px;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: clip; */
+}
+table.performer td:nth-child(3){
+    width: 10%;
+    text-align: center;
+}
+table.performer td:nth-child(4){
+    width: 95px;
+    text-align: center;
+}
+
+/* --------------------------TABLE-PERFORMER-END-------------------- */
+
+
+
+
+/* ----------------------------TABLE-ADMIN--------------------- */
+
+table.admin{
+    background-color: #EEEEEE;
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 5px;
+    color: black;
+}
+
+
+table.admin caption{
+    text-align: center;
+    background-color: Silver;
+    text-align: center;
+    font-size: 16pt;
+    border-radius: 5px 5px 0 0;
+    padding: 5px 0;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+}
+
+
+table.admin thead, tbody tr{
+    border-bottom: 1px solid black ;
+    font-size: 10pt;
+    transition: 0.3s;
+}
+table.admin tbody tr:hover{
+    background-color: DarkGrey;
+    cursor: pointer;
+}
+table.admin thead tr:nth-child(1){
+    background-color: Silver;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    border-top: 1px solid black;
+}
+
+table.admin tfoot tr{
+   height: 5px;
+}
+
+
+
+table.admin td{
+    padding: 10px 5px;
+}
+
+table.admin td:nth-child(1){
+    width: 5%;
+    text-align: center;
+}
+table.admin td:nth-child(2){
+    
+}
+table.admin td:nth-child(3){
+    width: 15%;
+    text-align: center;
+}
+table.admin td:nth-child(4){
+    width: 15%;
+    text-align: center;
+}
+table.admin td:nth-child(5){
+    width: 10%;
+    text-align: center;
+}
+table.admin td:nth-child(6){
+    width: 95px;
+    text-align: center;
+}
+/* --------------------------TABLE-ADMIN-END-------------------- */
+
+
+
+
+
+/* -------------------------TABLE-ADMIN_APLICATIONS------------ */
+
+table.admin_applications{
+    background-color: #EEEEEE;
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 5px;
+    color: black;
+}
+
+
+table.admin_applications caption{
+    text-align: center;
+    background-color: Silver;
+    text-align: center;
+    font-size: 16pt;
+    border-radius: 5px 5px 0 0;
+    padding: 5px 0;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+}
+
+
+table.admin_applications thead, tbody tr{
+    border-bottom: 1px solid black ;
+    font-size: 10pt;
+    transition: 0.3s;
+}
+table.admin_applications tbody tr:hover{
+    background-color: DarkGrey;
+    cursor: pointer;
+}
+table.admin_applications thead tr:nth-child(1){
+    background-color: Silver;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    border-top: 1px solid black;
+}
+
+table.admin_applications tfoot tr{
+   height: 5px;
+}
+
+
+
+table.admin_applications td{
+    padding: 10px 5px;
+}
+
+table.admin_applications td:nth-child(1){
+    width: 5%;
+    text-align: center;
+}
+table.admin_applications td:nth-child(2){
+    min-width: 60%;
+}
+table.admin_applications td:nth-child(3){
+    text-align: center;
+}
+table.admin_applications td:nth-child(4){
+    text-align: center;
+}
+table.admin_applications td:nth-child(5){
+    width: 10%;
+    text-align: center;
+}
+table.admin_applications td:nth-child(6){
+    width: 95px;
+    text-align: center;
+}
+
+/* ----------------------TABLE-ADMIN_APLICATIONS-END------------- */
+
+
+
+
+
+
+/* ----------------------------TABLE-VIEW-APLICATIONS--------------------- */
+
+table.view_applications{
+    background-color: #EEEEEE;
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 5px;
+    color: black;
+}
+
+
+table.view_applications caption{
+    text-align: center;
+    background-color: Silver;
+    text-align: center;
+    font-size: 16pt;
+    border-radius: 5px 5px 0 0;
+    padding: 5px 0;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+}
+
+
+table.view_applications thead, tbody tr{
+    border-bottom: 1px solid black ;
+    font-size: 10pt;
+    transition: 0.3s;
+}
+table.view_applications tbody tr:hover{
+    background-color: DarkGrey;
+    cursor: pointer;
+}
+table.view_applications thead tr:nth-child(1){
+    background-color: Silver;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    border-top: 1px solid black;
+}
+
+table.view_applications tfoot tr{
+   height: 5px;
+}
+
+
+
+table.view_applications td{
+    padding: 10px 5px;
+}
+
+table.view_applications td:nth-child(1){
+    width: 5%;
+    text-align: center;
+}
+table.view_applications td:nth-child(2){
+    
+}
+table.view_applications td:nth-child(3){
+    width: 15%;
+    text-align: center;
+}
+table.view_applications td:nth-child(4){
+    width: 15%;
+    text-align: center;
+}
+table.view_applications td:nth-child(5){
+    width: 10%;
+    text-align: center;
+}
+table.view_applications td:nth-child(6){
+    width: 95px;
+    text-align: center;
+}
+/* --------------------------TABLE-VIEW-APLICATIONS-END-------------------- */
+
+
+
+
+
+
+/* --------------------------PERSONAL-AREA---------------------- */
+
+.personal_area{
+    background-color: #EEEEEE;
+    padding: 5px;
+    margin: 10px 0;
+}
+.personal_area_head{
+    /* background-color: rgba(255, 105, 180, 0.473); */
+    border-bottom:2px solid black ;
+    font-size: 16pt;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+}
+.personal_area_body{
+    /* background-color: rgba(240, 230, 140, 0.479); */
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+}
+.personal_area_body>a{
+    text-decoration: none;
+}
+
+.status_box{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+.s-b_nav{
+    /* background-color: blueviolet; */
+    padding: 1px;
+}
+.status_red{
+    background-color: red;
+    padding: 5px;
+    border-radius: 5px;
+}
+.status_yellow{
+    background-color: yellow;
+    padding: 5px;
+    border-radius: 5px;
+}
+.status_green{
+    background-color: green;
+    padding: 5px;
+    border-radius: 5px;
+}
+.status_done{
+    background-color: rgb(40, 201, 241);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+.personal_area_dr-b_blok{
+    background-color: Gainsboro;
+    color: black;
+    padding: 10px;
+    font-size: 14pt;
+    border-radius: 3px;
+    transition: 0.3s;
+    margin: 10px 0;
+}
+.personal_area_dr-b_blok:hover{
+    background-color: LightGray;
+}
+
+
+.pa_dr-b_blok_hidden{
+    background-color: Gainsboro;
+    display: none;
+    margin: -15px 0 20px 0;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+.hidden2_table_box{
+    background-color: hotpink;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* -----table------ */
+table.tb{
+    background-color: #EEEEEE;
+    width: 40%;
+    border-collapse: collapse;
+    border-radius: 5px;
+    color: black;
+}
+
+
+table.tb caption{
+    text-align: center;
+    background-color: Silver;
+    text-align: center;
+    font-size: 16pt;
+    border-radius: 5px 5px 0 0;
+    padding: 5px 0;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+}
+
+
+table.tb thead, tbody tr{
+    border-bottom: 1px solid black ;
+    font-size: 10pt;
+    transition: 0.3s;
+    min-height: 40px;
+}
+table.tb tbody tr:hover{
+    background-color: DarkGrey;
+    cursor: pointer;
+}
+table.tb thead tr:nth-child(1){
+    background-color: Silver;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    border-top: 1px solid black;
+}
+
+table.tb tfoot tr{
+   height: 5px;
+}
+
+
+
+table.tb td{
+    padding: 10px 5px;
+}
+
+table.tb td:nth-child(1){
+    width: 10%;
+    text-align: center;
+}
+table.tb td:nth-child(2){
+    text-align: left;
+}
+table.tb td:nth-child(3){
+    text-align: left;
+}
+table.tb td:nth-child(4){
+    width: 25%;
+    text-align: center;
+}
+/* table-end */
+/* --------------------------PERSONAL-AREA-END--------------------- */
+
+
+/* -----------------------------PROFILE--------------------------- */
+.my_profil{
+    background-color: Gainsboro;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 5px;   
+    padding: 5px;
+    margin: auto;
+}
+.my_profil_blok{
+    background-color: #4AA8FF;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+.my_profil_blok>img{
+    width: 200px;
+}
+.my_profil_blok_edit{
+    background-color: gray;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.my_profil_blok_edit:hover{
+    background-color: DimGray;
+}
+
+/* -----------------------------PROFILE-END-------------------------- */
+
+
+
+/* -------------------------------START-PAGE--------------------------- */
+
+.s-p_blok{
+    background-color: Gainsboro;
+    color: black;
+    display: inline-block;
+    padding: 10px;
+    font-size: 14pt;
+    border-radius: 3px;
+    transition: 0.3s;
+    margin: 20px 0;
+}
+.s-p_blok:hover{
+    background-color: LightGray;
+}
+
+.filing_form{
+    display: flex;
+    flex-direction: column;
+}
+.filing_form_el{
+    margin: 10px 0;
+}
+.filing_form_el_submit{
+    text-align: center;
+}
+.filing_form_el>textarea{
+    width: 100%;
+    outline: none;  
+    outline-offset: -1px;
+    padding: 5px;
+    border-radius: 3px;
+    transition: 0.3s;
+    margin: auto;
+}
+.filing_form_el>textarea:focus{
+    outline: 1px solid #fc00ff;
+}
+.filing_form_el_submit>input{
+    background-color: gray;
+    outline: none;
+    width: 60%;
+    font-size: 14pt;
+    padding: 5px;
+    border-radius: 3px;
+}
+.filing_form_el_submit>input:hover{
+    background: linear-gradient(45deg, #00dbde, #fc00ff);
+}
+/* -------------------------------START-PAGE-END-------------------------- */
+
+
+
+
+/* -------------------------------EDIT----------------------------- */
+.edit_form{
+    margin: auto;
+}
+.mp_blok_edit_form{
+    margin: 15px 0;
+    text-align: center;
+}
+.mp_blok_edit_form>input{
+    outline: none;  
+    outline-offset: -1px;
+    font-size: 14pt;
+    padding: 5px;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+.mp_blok_edit_form>input:focus{
+    outline: 1px solid #fc00ff;
+}
+.mp_blok_edit_form_submit{
+    margin: 15px 0;
+}
+.mp_blok_edit_form_submit>input{
+    background-color: gray;
+    outline: none;
+    width: 100%;
+    font-size: 14pt;
+    padding: 5px;
+    border-radius: 3px;
+}
+.mp_blok_edit_form_submit>input:hover{
+    background: linear-gradient(45deg, #00dbde, #fc00ff);
+}
+/* --------------------------------EDIT-END------------------------------ */
+
+
+
+
+/* -------------------------------REG----------------------------- */
+.reg_form{
+    margin: auto;
+}
+.mp_blok_reg_form{
+    margin: 15px 0;
+}
+.mp_blok_reg_form>input{
+    outline: none;  
+    outline-offset: -1px;
+    font-size: 14pt;
+    padding: 5px;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+.mp_blok_reg_form>input:focus{
+    outline: 1px solid #fc00ff;
+}
+
+.mp_blok_reg_form>select{
+    outline: none;  
+    outline-offset: -1px;
+    font-size: 14pt;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+.mp_blok_reg_form>select:focus{
+    outline: 1px solid #fc00ff;
+}
+
+
+.mp_blok_reg_form_submit{
+    margin: 15px 0;
+}
+.mp_blok_reg_form_submit>input{
+    background-color: gray;
+    outline: none;
+    width: 100%;
+    font-size: 14pt;
+    padding: 5px;
+    border-radius: 3px;
+}
+.mp_blok_reg_form_submit>input:hover{
+    background: linear-gradient(45deg, #00dbde, #fc00ff);
+}
+
+/* --------------------------------reg-END------------------------------ */
+
+
+
+/* ------------------------------AUTH------------------------------ */
+
+.form{
+    background-color: gray;
+    margin: auto;
+    width: 40%;
+    padding: 20px;
+    border-radius: 5px;
+}
+.form_title{
+    /* background-color: khaki; */
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form_title>span{
+    text-align: center;
+    font-size: 18pt;
+
+}
+.form_auth_box{
+    /* background-color: lawngreen; */
+    padding: 1px;
+}
+.f_a_b_blok{
+    /* background-color: lightblue; */
+    padding: 1px;
+    margin-bottom: 20px;
+}
+.f_a_b_blok>span{
+    /* background-color: slateblue; */
+    padding: 0 5px;
+}
+.form_auth_el{
+    /* background-color: lightcoral; */
+    margin: 5px 0;
+}
+.form_auth_el>input{
+    font-size: 14pt;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    outline: none;
+}
+.form_auth_el>input:focus{
+    outline: 2px solid #fc00ff;
+}
+.form_auth_el_submit{
+    /* background-color: lightcoral; */
+    margin: 5px 0;
+}
+.form_auth_el_submit>input{
+    background-color: silver;
+    font-size: 14pt;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.form_auth_el_submit>input:hover{
+    background: linear-gradient(45deg, #00dbde, #fc00ff);
+}
+/* -----------------------------AUTH-END--------------------------- */
+
+
+
+
+
+
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+@media (max-width:700px) {
+    /* HEADER */
+    .header{
+        height: 50px;
+    }
+    .header_menu{
+        width: 95%;
+        font-size: 10pt;
+    }
+    .header_menu_nav{
+        font-size: 8pt;
+    }
+    .header_menu_name{
+        font-size: 12pt;
+    }
+    /* HEADER-END */
+
+    .container{
+        width: 95%;
+    }
+
+    /* --------------------------TABLE---------------------------- */
+    /* table.employee caption{
+        font-size: 12pt;
+    }
+    table.employee thead, tbody, tfoot{
+        font-size: 9pt;
+    } */
+    table caption{
+        font-size: 12pt;
+    }
+    table thead, tbody, tfoot{
+        font-size: 9pt;
+    }
+
+    /* --------------------------TABLE-END-------------------- */
+
+    /* ------------------------PERSONAL-AREA---------------------- */
+
+    .personal_area_head{
+        font-size: 14pt;
+    }
+
+    .personal_area_dr-b_blok{
+        margin-bottom: 20px;
+        padding: 5px;
+        font-size: 10pt;
+    }    
+
+    /* ----------------------PERSONAL-AREA-END */
+}
